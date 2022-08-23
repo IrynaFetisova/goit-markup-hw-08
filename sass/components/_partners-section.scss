@@ -9,6 +9,10 @@
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
    }
+
+   @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+   }
 }
 
 .partners__nav:nth-last-child(6n) {
@@ -17,13 +21,16 @@
 
 .partners__link {
   @include CenteredFlex(center);
-  width: 170px;
-  height: 92px;
   @media screen and (min-width: 480px) {
     width: 210px;
     height: 92px;
     margin-bottom: 30px;
    }
+   @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+   }
+
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;

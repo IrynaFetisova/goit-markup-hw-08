@@ -1,15 +1,19 @@
 /* НАША КОМАНДА */
 
 .team {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    justify-content: center;
-  } 
-  @media screen and (min-width: 1600px) {
-    display: flex;
-   }
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+   } 
+}
+ 
+.person-img {
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
 }
 
 .team__list {
@@ -22,9 +26,9 @@
     margin-right: 30px;
    }
 
-   @media screen and (min-width: 480px) {
-    
-  } 
+   @media screen and (min-width: 768px) {
+    width: 354px;
+  }
   
 }
 
@@ -60,14 +64,20 @@
 }
 
 .team__img {
-  @include CenteredFlex(center);
-  width: 450px;
-  height: 460px;
-
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 354px;
-  height: 374px;
-  } 
+    height: 536px;
+  }
+  
+
+//   @media screen and (min-width: 480px) {
+//     width: 354px;
+//     height: 374px;
+//   } 
+
+//   @media screen and (min-width: 1200px) {
+
+//   } 
 }
 
 .personal-nav__link {
