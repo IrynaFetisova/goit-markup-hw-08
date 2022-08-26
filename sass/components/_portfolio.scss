@@ -7,7 +7,7 @@
   column-gap: 8px;
   margin-bottom: 50px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
 		gap: 8px;
 		justify-content: flex-start;
@@ -51,34 +51,21 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-  // @media screen and (min-width: 480px) {
-  //   justify-content: center;
-  //   }
-
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     column-gap: 30px;
     justify-content: flex-start;
    }
-  //  @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   flex-wrap: wrap
-  //  }
-  
 }
 
 .work-list__cards {
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
   &:hover,
   &:focus {
      box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
      1px 4px 6px rgb(0 0 0 / 16%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 404px;
-    margin-bottom: 30px;
    }
    @media screen and (min-width: 768px) {
     width: 354px;
